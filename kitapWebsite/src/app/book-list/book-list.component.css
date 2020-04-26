@@ -1,0 +1,70 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.books-category{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  width: 20%;
+  padding: 15px 20px;
+  margin: 30px;
+}
+
+.books-category a{
+  font-family: kitap-font-regular;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.books-category a:hover{
+  color:#fe793c ;
+}
+
+.books-category-inside{
+  margin: 10px;
+}
+
+.books {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: fit-content%;
+  justify-content: flex-end;
+}
+
+.books .border{
+  flex:1 0 30%;
+  margin: 10px 0px;
+  padding: 10px 20px;
+  border: 1px solid #cfcdd2;
+  border-radius: 5px;
+}
+
+img {
+  height: 300px;
+  width: 200px;
+}
+
+.bookName {
+  font-family: kitap-font-regular;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.bookAuthor {
+  font-family: kitap-font-light;
+  font-weight: 500;
+  font-size: 14px;
+  color: #9b9b9b;
+  text-decoration: none;
+}

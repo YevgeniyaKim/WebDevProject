@@ -1,0 +1,20 @@
+      <div class="first_div">
+        <img src="https://bridge315.qodeinteractive.com/wp-content/uploads/2020/01/p1-title-img-01.jpg">
+        <form class="search_box">
+          <label>
+            <input type="text" name="search-text" placeholder="Сайт бойынша іздеу" >
+          </label>
+        </form>
+      </div>
+      <div class="footer">
+      </div>
+      <h1>ҮЗДІК КОМИКСТАР & ҮЗДІК КІТАПТАР</h1>
+<div class="comics_dashboard">
+  <a *ngFor="let item of topComics">
+    <div class="comics_items">
+      <img src="{{item.poster}}"/>
+    </div>
+  </a>
+</div>
+
+

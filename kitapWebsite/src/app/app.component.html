@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+  <body>
+    <header>
+
+      <div class="nav_bar">
+        <img class="logo" routerLink="/home" src="https://kitap.kz/images/logo/orange-logo.svg" alt="logo">
+        <nav>
+          <ul class="nav_links" >
+            <li><a routerLink="/books">Кітап</a></li>
+            <li><a routerLink="/comics">Комикс</a></li>
+          </ul>
+        </nav>
+<!--        <a class="login" routerLink="/login"><button *ngIf="!logged">Кіру</button></a>-->
+        <button *ngIf="!logged" [routerLink]="['/login']" class="login" type="button">Кіру</button>
+        <a class="login" ><button *ngIf="logged" [routerLink]="['/home']"(click)="logout()">Шығу</button></a>
+      </div>
+    </header>
+    <router-outlet></router-outlet>
+
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <img src="https://kitap.kz/images/logo/logo-white.svg">
+
+        <p class="footer-company-name">© 2019 "Ұлттық аударма бюросы" қоғамдық қоры</p>
+      </div>
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>Құпиялық саясаты</span>
+          <span>Қолданушылық келісімі</span>
+          <span>Байланыс</span>
+        </p>
+
+      </div>
+
+    </footer>
+  </body>
+
