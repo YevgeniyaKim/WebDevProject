@@ -26,10 +26,12 @@ export class BookListComponent implements OnInit {
   getId(): void{
     this.id = +this.route.snapshot.paramMap.get('category_id');
   }
+
   getBooksByCategory(): void{
     this.service.getBooksByCategory(this.id)
       .subscribe(booksProducts => this.booksProducts = booksProducts);
   }
+
   getBooksCategoryList(): void{
     this.service.getCategoryType()
       .subscribe(booksCategories => this.booksCategories = booksCategories);

@@ -37,12 +37,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
+  width: 70%;
   /*padding: 15px 20px;*/
   /*margin: 30px;*/
 }
 
 .allBooks .border {
-  flex: 1 0 20%;
+  flex: 1 0 0%;
   margin: 10px 0px;
   padding: 10px 20px;
   border: 1px solid #cfcdd2;
@@ -54,7 +55,7 @@ img {
   width: 200px;
 }
 
-.bookName {
+.bookName, label{
   font-family: Arial, sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -62,10 +63,49 @@ img {
   text-decoration: none;
 }
 
-.bookAuthor {
+.bookAuthor{
   font-family: Arial, sans-serif;
   font-weight: 500;
   font-size: 14px;
   color: #9b9b9b;
   text-decoration: none;
+}
+
+h1{
+  text-align: center;
+  width: fit-content;
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  border: 2px solid #fe793c;
+}
+
+input{
+  width: 40px;
+  text-align: center;
+  margin:14px;
+  border: 1px solid #cfcdd2;
+  border-radius: 5px;
+  color:#fe793c;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+button{
+  width: fit-content;
+  font-family: kitap-font-regular;
+  background-color: #FFF;
+  border: none;
+  border-radius: 2px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: sandybrown;
+}
+
+button:hover{
+  background-color: sandybrown;
+  color: #FFFFFF;
+  border-color:#fe793c ;
 }

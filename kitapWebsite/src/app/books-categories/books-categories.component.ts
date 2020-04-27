@@ -30,6 +30,7 @@ export class BooksCategoriesComponent implements OnInit {
     this.service.getBooksList()
       .subscribe(booksProducts => this.booksList = booksProducts);
   }
+
   addBooks(): void{
     this.service.addBooks()
       .subscribe(booksList => this.booksList = booksList);

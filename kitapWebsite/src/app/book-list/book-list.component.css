@@ -32,16 +32,18 @@
   margin: 10px;
 }
 
-.books {
+.allBooks {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: fit-content%;
   justify-content: flex-end;
+  width: 70%;
+  /*padding: 15px 20px;*/
+  /*margin: 30px;*/
 }
 
-.books .border{
-  flex:1 0 30%;
+.allBooks .border {
+  flex: 1 0 0%;
   margin: 10px 0px;
   padding: 10px 20px;
   border: 1px solid #cfcdd2;
@@ -53,18 +55,27 @@ img {
   width: 200px;
 }
 
-.bookName {
-  font-family: kitap-font-regular;
+.bookName{
+  font-family: Arial, sans-serif;
   font-weight: 500;
   font-size: 14px;
   color: #000000;
   text-decoration: none;
 }
 
-.bookAuthor {
-  font-family: kitap-font-light;
+.bookAuthor{
+  font-family: Arial, sans-serif;
   font-weight: 500;
   font-size: 14px;
   color: #9b9b9b;
   text-decoration: none;
+}
+
+h1{
+  text-align: center;
+  width: fit-content;
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  border: 2px solid #fe793c;
 }

@@ -1,5 +1,6 @@
 <div class="main">
   <div class="books-category">
+    <h1>Кітаптар</h1>
     <div class="books-category-inside" *ngFor = "let bookCat of booksCategories">
       <a routerLink="/books/{{ bookCat.id }}/all">
         {{bookCat.name}}
@@ -13,9 +14,10 @@
     <div class="border" *ngFor = "let books of booksList">
       <a routerLink="/books/{{books.category_id}}/all/{{books.id}}">
         <img src="{{books.image}}"/>
-        <p class="bookName">{{books.name}}</p>
-        <p class="bookAuthor">{{books.author}}</p>
       </a>
+      <p class="bookName">{{books.name}}</p>
+      <p class="bookAuthor">{{books.author}}</p>
+      <label>Рейтинг</label>
       <input  [(ngModel)]="books.rating" />
     </div>
   </div>

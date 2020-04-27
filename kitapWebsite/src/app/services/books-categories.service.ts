@@ -40,7 +40,8 @@ export class BooksCategoriesService {
   addBooks(): Observable<Book[]>{
     return this.http.post<Book[]>(`${this.BASE_URL}/books/all/`, {
       name: 'Test Book',
-      poster: 'https://cdn.kitap.kz/storage//uploads/books/2208/Img_book.jpg',
+      author: 'Noname',
+      image: 'https://cdn.kitap.kz/storage//uploads/books/2208/Img_book.jpg',
       rating: 1,
     });
   }

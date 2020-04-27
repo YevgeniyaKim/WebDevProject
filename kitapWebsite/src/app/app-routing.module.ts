@@ -19,8 +19,8 @@ const routes: Routes = [
   { path: 'comics', component: ComicsCategoriesComponent },
   { path: 'comics/:category_id/all/:id', component: ComicsDetailComponent},
   { path : 'comics/:category_id/all', component: ComicsListComponent},
-  { path: 'books/:book_category_name/all/:id', component: BooksDetailComponent},
-  { path : 'books/:book_category_name/all', component: BookListComponent}
+  { path: 'books/:category_id/all/:id', component: BooksDetailComponent},
+  { path : 'books/:category_id/all', component: BookListComponent}
 ];
 
 @NgModule({
