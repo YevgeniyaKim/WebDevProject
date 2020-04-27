@@ -15,5 +15,13 @@
         </library>
       </libraries>
     </data-source>
+    <data-source source="LOCAL" name="Django default" uuid="c11179c0-dc18-4f5c-8b57-45d95ddbc320">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/kitapWebsiteBack/settings.py</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\User\Desktop\КБТУ\Web\WebDevProject\WebProject\kitapWebsiteBack\db.sqlite3</jdbc-url>
+    </data-source>
   </component>
 </project>
